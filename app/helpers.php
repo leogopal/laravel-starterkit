@@ -4,7 +4,6 @@ use App\Helpers\General\Timezone;
 use App\Helpers\General\HtmlHelper;
 use Jenssegers\Agent\Agent;
 
-
 /*
  * Global helpers file with misc functions.
  */
@@ -205,7 +204,6 @@ if (! function_exists('body_classes')) {
 }
 
 if (! function_exists('get_device_classes')) {
-
     function get_device_classes()
     {
         $device_classes[] = device_agent()->isDesktop() ? 'is-desktop' : 'not-desktop';
