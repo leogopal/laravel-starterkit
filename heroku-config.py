@@ -21,7 +21,7 @@ def splitLineIntoParts(line):
 	return line
 
 def setConfigVar(name, value):
-	os.system('heroku config:set ' + name + '=' + value + '--app laravel-starterkit')
+	os.system('heroku config:set ' + name + '=' + value + ' --app laravel-starterkit')
 
 with open('.env') as e:
 	numCurrentVar = 0
