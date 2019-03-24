@@ -3,6 +3,7 @@
 use App\Helpers\General\Timezone;
 use App\Helpers\General\HtmlHelper;
 use Jenssegers\Agent\Agent;
+use Illuminate\Support\Str;
 
 /*
  * Global helpers file with misc functions.
@@ -94,6 +95,18 @@ if (! function_exists('home_route')) {
         }
 
         return 'frontend.index';
+    }
+}
+
+
+if (! function_exists('current_user')) {
+    function current_user()
+    {
+        if (auth()->check()) {
+            return auth()->user();
+        } else {
+            return false;
+        }
     }
 }
 
@@ -215,5 +228,51 @@ if (! function_exists('get_device_classes')) {
         $device_classes[] = kebab_case(device_agent()->browser());
 
         return $device_classes;
+    }
+}
+
+if (! function_exists('clean_slash_it')) {
+    function clean_slash_it($url)
+    {
+        return preg_replace('/([^:])(\/{2,})/', '$1/', $url);
+    }
+}
+
+if (! function_exists('plural_from_model')) {
+    function plural_from_model($model)
+    {
+        $plural = Str::plural(class_basename($model));
+
+        return Str::kebab($plural);
+    }
+}
+
+if (! function_exists('singular_from_model')) {
+    function singular_from_model($model)
+    {
+        $plural = Str::singular(class_basename($model));
+
+        return Str::kebab($plural);
+    }
+}
+
+if (! function_exists('plural_model')) {
+    function plural_model($model)
+    {
+        return Str::plural(class_basename($model));
+    }
+}
+
+if (! function_exists('singular_model')) {
+    function singular_model($model)
+    {
+        return Str::singular(class_basename($model));
+    }
+}
+
+if (! function_exists('str_readable_permission')) {
+    function str_readable_permission($permission_name)
+    {
+        return Str::title(str_replace('-', ' ', $permission_name));
     }
 }
