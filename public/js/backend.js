@@ -3586,9 +3586,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__bootstrap__ = __webpack_require__("./resources/js/bootstrap.js");
-throw new Error("Cannot find module \"pace\"");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__plugins__ = __webpack_require__("./resources/js/plugins.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__plugins___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__plugins__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__plugins__ = __webpack_require__("./resources/js/plugins.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__plugins___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__plugins__);
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -3596,7 +3595,6 @@ throw new Error("Cannot find module \"pace\"");
  */
 
 // Loaded before CoreUI app.js
-
 
 
 
