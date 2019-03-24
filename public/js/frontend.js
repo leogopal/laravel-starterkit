@@ -12429,12 +12429,20 @@ $(function () {
 
 /***/ }),
 
+/***/ "./resources/sass/shared.scss":
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ 0:
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__("./resources/js/frontend/app.js");
 __webpack_require__("./resources/sass/frontend/app.scss");
-module.exports = __webpack_require__("./resources/sass/backend/app.scss");
+__webpack_require__("./resources/sass/backend/app.scss");
+module.exports = __webpack_require__("./resources/sass/shared.scss");
 
 
 /***/ })

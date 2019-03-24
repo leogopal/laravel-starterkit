@@ -17,6 +17,8 @@ class Kernel extends ConsoleKernel
      */
     protected $commands = [
         Commands\CustomMakeModelCommand::class,
+        Commands\LGCrud::class,
+        Commands\LGStub::class
     ];
 
     /**

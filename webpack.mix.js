@@ -1,5 +1,5 @@
 const mix = require('laravel-mix');
-
+require('laravel-mix-purgecss');
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -17,6 +17,7 @@ mix.setResourceRoot('../');
 
 mix.sass('resources/sass/frontend/app.scss', 'css/frontend.css')
     .sass('resources/sass/backend/app.scss', 'css/backend.css')
+    .sass('resources/sass/shared.scss', 'css/shared.css')
     .js('resources/js/frontend/app.js', 'js/frontend.js')
     .js([
         'resources/js/backend/before.js',
@@ -34,7 +35,8 @@ mix.sass('resources/sass/frontend/app.scss', 'css/frontend.css')
         '@fortawesome/free-brands-svg-icons',
         '@fortawesome/free-regular-svg-icons',
         '@fortawesome/free-solid-svg-icons'
-    ]);
+    ])
+    .purgeCss();
 
 mix.copyDirectory('resources/images', 'public/images');
 
