@@ -23,7 +23,7 @@ class UserTableSeeder extends Seeder
         User::create([
             'first_name'        => 'Digit',
             'last_name'         => 'Lab',
-            'email'             => 'leo@digitlab.co.za',
+            'email'             => 'admin@admin.com',
             'password'          => 'secret',
             'confirmation_code' => md5(uniqid(mt_rand(), true)),
             'confirmed'         => true,
