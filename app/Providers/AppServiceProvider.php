@@ -58,6 +58,14 @@ class AppServiceProvider extends ServiceProvider
         // Set the default template for Pagination to use the included Bootstrap 4 template
         \Illuminate\Pagination\AbstractPaginator::defaultView('pagination::bootstrap-4');
         \Illuminate\Pagination\AbstractPaginator::defaultSimpleView('pagination::simple-bootstrap-4');
+
+        /*
+         * The block of code inside this directive indicates
+         * the chosen language requests RTL support.
+         */
+        Blade::if('langrtl', function ($session_identifier = 'lang-rtl') {
+            return session()->has($session_identifier);
+        });
     }
 
     /**
