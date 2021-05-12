@@ -59,7 +59,7 @@
         }
     },
     "dependencies": {
-        "chart.js": "^2.7.2",
+        "chart.js": "^2.9.4",
         "cropperjs": "^1.4.3",
         "form-backend-validation": "^2.3.3",
         "laravel-echo": "^1.4.0",
