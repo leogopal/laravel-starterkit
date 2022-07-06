@@ -65,7 +65,7 @@
         "laravel-echo": "^1.4.0",
         "pretty-checkbox-vue": "^1.1.9",
         "pusher-js": "^4.3.1",
-        "select2": "^4.0.6-rc.1",
+        "select2": "^4.0.6",
         "trix": "^0.12.1",
         "update": "^0.7.4",
         "vue-google-autocomplete": "^1.1.0"
